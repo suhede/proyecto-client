@@ -1,0 +1,103 @@
+/* ------------------------botones inicio/cerrar sesion-------- */
+.sesion {
+    width: 15rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1em;
+  }
+  .sesion p {
+    color: brown;
+    list-style-type: none;
+    font-weight: bold;
+    padding: 0.4em;
+  }
+  .sesion button {
+    width: 8rem;
+    padding: 0.2em;
+    margin: 0.2em 0em;
+    border: none;
+    border-radius: 3rem;
+    font-weight: bold;
+  }
+  .sesion a {
+    text-decoration: none;
+  }
+  
+  /* -------------------------------LOGIN-------------------------------- */
+  .login__container {
+    max-width: 30rem;
+    margin: 5rem auto;
+  }
+  .login {
+    width: 20rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ececec;
+    padding: 1.5em 1.2em;
+    border-radius: 0.7em;
+  }
+  .login__label {
+    font-size: 1.5em;
+    padding: 0.5em;
+    color: brown;
+  }
+  .login__input {
+    border: none;
+    border-radius: 1.5em;
+    font-size: 1em;
+    padding: 0.3em;
+  }
+  .login__submit {
+    margin-top: 0.8em;
+    border: none;
+    width: 7rem;
+    padding: 0.5em 0.2em;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    background-color: goldenrod;
+    border-radius: 0.5em;
+    transition-duration: 0.3s;
+  }
+  .login__submit:hover {
+    color: black;
+    background-color: gold;
+  }
+
+  @media screen and (min-width: 389px) and (max-width: 540px) {
+    .sesion {
+        display: none;
+      }
+  }
+  @media screen and (min-width: 541px) and (max-width: 768px) {
+    .sesion {
+        display: none;
+      }
+  }
+  @media screen and (min-width: 769px) and (max-width: 960px){
+.footer{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer h6 {
+    padding: 0em;
+    margin: 0.1em;
+    font-size: 0.8em;
+    font-weight: 400;
+  }
+  .footer a {
+    margin-left: 0em;
+    color: brown;
+    font-size: 0.8em;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  }

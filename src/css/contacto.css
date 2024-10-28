@@ -1,0 +1,197 @@
+/* -------------------------------------CONTACTOS------------------------------------------ */
+
+.contacto__img {
+  width: 100%;
+  min-height: 35rem;
+  margin: 0 auto;
+  background-image: url("./src/assets/imagenes/taller_dibujo.webp");
+  background-position: center;
+  opacity: 0.3;
+  position: relative;
+}
+.contacto__datos {
+  width: 85%;
+  min-height: 35rem;
+  position: absolute;
+  top: 11rem;
+  left: 9rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.datos {
+  width: 48%;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.datos h2,
+.form__h3 {
+  font-weight: 500;
+  font-size: 1.6em;
+  color: brown;
+}
+.datos h2 a {
+  display: flex;
+  justify-content: center;
+}
+.datos h2 img {
+  width: 9.3rem;
+}
+.datos h3 {
+  font-size: 1.4em;
+  font-weight: 400;
+  margin: 0;
+  padding: 0.1em 0.3em;
+}
+
+.contacto__form label {
+  font-size: 1.3em;
+  font-weight: 500;
+}
+.contacto__div {
+  width: 48%;
+  margin: 1rem auto 0rem;
+  display: flex;
+  justify-content: center;
+}
+.contacto__div form {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  width: 20rem;
+  padding: 0.7em;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.1em solid brown;
+  border-right: 0.2em solid brown;
+  border-radius: 0.3em;
+  resize: none;
+}
+.input__submit {
+  width: 7rem;
+  padding: 0.7em;
+  margin: 0.8em auto;
+  background: goldenrod;
+  border: none;
+  border-radius: 0.2em;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 300ms;
+}
+.input__submit:hover {
+  background-color: gold;
+}
+
+/* -----------------MEDIA-QUERIES------------------- */
+
+@media screen and (min-width: 389px) and (max-width: 540px) {
+  .contacto {
+    width: 90%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+  }
+  .contacto__img {
+    min-height: 42rem;
+    margin: 0 auto;
+    opacity: 0.2;
+  }
+  .contacto__datos {
+    width: 90%;
+    height: 35rem;
+    left: 1em;
+    top: 10em;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .datos {
+    margin-top: 1rem;
+  }
+  .contacto__div {
+    display: none;
+  }
+  .datos h2 {
+    font-size: 1.3em;
+    text-align: center;
+  }
+  .datos h3 {
+    font-size: 1em;
+    text-align: center;
+  }
+  .datos h2 img{
+    width: 6rem;
+  }
+}
+
+@media screen and (min-width: 541px) and (max-width: 768px) {
+  .contacto {
+    width: 90%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+  }
+  .contacto__img {
+    min-height: 42rem;
+    margin: 0 auto;
+    opacity: 0.2;
+  }
+  .contacto__datos {
+    width: 90%;
+    height: 35rem;
+    left: 1.5em;
+    top: 19em;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .datos {
+    margin-top: 0.2rem;
+  }
+  .contacto__div {
+    display: none;
+  }
+  .datos h2 {
+    text-align: center;
+    font-size: 1.8em;
+  }
+  .datos h3 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 960px) {
+  
+  .contacto__img{
+    opacity: 0.2;
+  }
+  .contacto__datos {
+    width: 98%;
+    height: 35rem;
+    left: 0.5em;
+    top: 13.9rem;
+  }
+
+  .datos{
+    margin-top: 2.9rem;
+  }
+  .datos h2,
+  .datos h3 {
+    padding: 0em 0.3em; 
+  }
+
+  .contacto__div{
+    margin: 0rem auto;
+    box-shadow: 0em 0em 0.3em grey;
+    border-radius: 0.3em;
+  }
+  .input {
+    width: 18rem;
+    padding: 0.5em;
+  }
+}

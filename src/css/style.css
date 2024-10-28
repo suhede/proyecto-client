@@ -1,0 +1,909 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+.header {
+  width: 100%;
+  min-height: 10rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d1defa;
+}
+.logo {
+  display: flex;
+  margin-left: 1em;
+}
+.span__uno {
+  display: block;
+  font-size: 6em;
+  font-weight: 300;
+  margin-top: 0.1em;
+  color: brown;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.span__dos {
+  display: block;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+h1 {
+  color: brown;
+}
+/* ----------------------------NAV------------------ */
+.header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin: 0;
+  padding: 0;
+}
+
+/* -----------------------menu del NAV/Desplegable------------------ */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin-right: 1em;
+  display: flex;
+}
+.menu li {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0 0.3em;
+  transition: all 400ms;
+}
+.menu li:hover .submenu {
+  display: block;
+}
+.menu a {
+  text-decoration: none;
+  display: block;
+  padding: 0.6em;
+  color:black;
+}
+.menu a:hover {
+  color: brown;
+  border: 0.2em solid aliceblue;
+  border-radius: 0.3em;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: aliceblue;
+  border-radius: 0.3em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.submenu li a {
+  display: block;
+  padding: 0.6em 1.2em;
+  text-decoration: none;
+}
+.submenu li a:hover {
+  border: none;
+  border-bottom: 0.2em solid goldenrod;
+}
+/* -----------------------------------------BARRA DEL BUSCADOR------------------------------------------- */
+
+.search {
+  width: 100%;
+  min-height: 3rem;
+  margin: 0;
+  padding: 0;
+  background-color: #d1defa;
+}
+.search div {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-right: 1.5em;
+}
+.input__buscar {
+  width: 20rem;
+  padding: 0.6em;
+  background-color: transparent;
+  border: 0.1em solid;
+  border-radius: 0.2em;
+  border-right: none;
+}
+.submit__buscar {
+  width: 6rem;
+  padding: 0.7em;
+  margin: 0.8em 1em 0.8em 0;
+  background: goldenrod;
+  border: none;
+  border-radius: 0.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 300ms;
+}
+.submit__buscar:hover {
+  background-color: gold;
+}
+.div__buscador {
+  width: 60%;
+  min-height: 15rem;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  box-shadow: 0em 0em 0.5em #d1defa;
+}
+/*------------------------------------------CONTENIDO GENERAL---------------------------------------*/
+
+/* --------------------------------------INICIO-------------------------------------- */
+.inicio__contenedor {
+  width: 100%;
+  margin: 0 auto;
+}
+/* -------sesion-uno---------------- */
+.inicio__sesion-uno,
+.inicio__sesion-dos,
+.inicio__sesion-tres,
+.inicio__sesion-cuatro {
+  width: 100%;
+  margin: 2rem auto;
+}
+.inicio__sesion-uno {
+  background-image: url("./src/assets/imagenes/inicio_dos.webp");
+  background-position:center;
+  background-size:cover;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-radius: 0.3em;
+}
+.inicio__div-uno {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  min-height: 20vh;
+  margin: 4rem auto 2rem;
+}
+.inicio__h2 {
+  font-weight: 500;
+  font-size: 2.1em;
+  font-style: oblique;
+  text-align: center;
+  color: white;
+  text-shadow:0em 0em 0.3em grey; 
+}
+.inicio__h3 {
+  font-weight: 500;
+  font-size: 1.8em;
+  font-style: oblique;
+  text-align: center;
+  padding: 1em 0.5em;
+  color: white;
+  text-shadow:0em 0em 0.3em grey; 
+}
+.inicio__div-dos,
+.inicio__div-ocho {
+  overflow: hidden;
+  animation: anim 8s linear infinite;
+}
+@keyframes anim {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(90%);
+  }
+}
+.inicio__h4 {
+  font-weight: bold;
+  font-size: 1.7em;
+  font-style: oblique;
+  text-align: center;
+  transition: all 300ms;
+  color: white;
+ text-shadow:0em 0em 0.3em grey;
+}
+.esencia {
+  font-size: 1.8em;
+ 
+}
+.cultura {
+  font-size: 1.6em;
+  
+}
+.historia {
+  border-bottom: 0.2em solid brown;
+
+}
+/* ----------sesion-dos--------------- */
+.inicio__sesion-dos {
+  display: flex;
+  align-items: center;
+}
+.inicio__div-tres {
+  width: 50%;
+  margin: 3rem auto;
+}
+.inicio__p {
+  font-size: 1.5em;
+  font-weight: 300;
+  padding: 0.5em 0.5em;
+  margin: 0;
+}
+.inicio__p span {
+  font-size: 1.6em;
+  color: brown;
+}
+.inicio__div-cuatro {
+  width: 30%;
+  height: 20rem;
+  margin: 3rem auto;
+}
+.inicio__div-cuatro img {
+  width: 100%;
+  height: 100%;
+}
+/* -----------sesion-tres-------------------- */
+
+.inicio__h2b {
+  font-weight: 400;
+  font-size: 2em;
+  font-style: oblique;
+  text-align: center;
+  padding: 0.6em;
+  background-color: rgb(219 238 234);
+}
+/* -----------------------LISTA PREVIA/Inicio------------------- */
+.previa {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.lista__previa {
+  width: 28rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 0em;
+  transition: all 700ms;
+}
+.previa__box {
+  width: 26rem;
+  height: 18.5rem;
+  margin-bottom: 0.2em;
+  overflow: hidden;
+}
+.previa__box img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+.previa__box img:hover {
+  opacity: 1;
+}
+.lista__previa h3 {
+  text-align: center;
+  margin: 0;
+  padding: 0.3em;
+}
+.lista__previa a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: brown;
+}
+.lista__previa a:hover {
+  border-bottom: 0.2em solid goldenrod;
+  border-radius: 0.3em;
+}
+
+/* ----------------------------MATRICULA/RESERVAS-------------------------------- */
+.matricula__contenedor {
+  width: 60%;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-radius: 0.3em;
+  box-shadow: 0em 0em 0.5em #d1defa;
+}
+.matricula__h2 {
+  font-weight: 400;
+  font-size: 2em;
+  font-style: oblique;
+  text-align: center;
+  margin-top: 1em;
+}
+.form__matricula {
+  width: 60%;
+  margin: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+}
+.form__matricula label {
+  font-weight: 500;
+  font-size: 1.3em;
+  color: brown;
+  padding: 0em 0.5em;
+}
+.inicio__div-seis h3 {
+  font-weight: 300;
+  font-size: 1.7em;
+  font-style: oblique;
+  text-align: center;
+  color: red;
+  transition: all 300ms;
+}
+.inicio__div-seis {
+  overflow: hidden;
+  animation: anima 8s linear infinite;
+}
+@keyframes anima {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ------------sesion-cuatro------------------ */
+.inicio__sesion-cuatro {
+  display: flex;
+  flex-direction: column;
+}
+.inicio__div-siete {
+  width: 90%;
+  margin: 1rem 0rem 2rem 5rem;
+}
+.inicio__div-ocho {
+  width: 100%;
+  height: 13rem;
+  display: flex;
+  justify-content: space-around;
+}
+.inicio__div-ocho img {
+  width: 25rem;
+  height: 100%;
+  padding: 0em 0.5em;
+}
+
+/*  Estilo logo del Instagram-------------- */
+.instagram__h2 {
+  font-weight: 300;
+  font-size: 2.1em;
+  font-style: oblique;
+  text-align: center;
+  padding: 0.6em;
+  background-color: rgb(219 238 234);
+}
+.instagram__h2 a {
+  display: flex;
+  justify-content: center;
+}
+.instagram__h2 img {
+  width: 12.5rem;
+  height: 2.5rem;
+}
+/* ------------sesion-cinco------------------ */
+.inicio__sesion-cinco {
+  width: 100%;
+  margin: 2rem auto 0rem;
+  background: #d1defa;
+}
+/* ------------------------------DIRECCION----------------------------------- */
+.direccion {
+  width: 100%;
+  min-height: 8rem;
+  margin: 0 auto;
+}
+.direccion__datos {
+  width: 100%;
+  margin: 1rem auto 0rem;
+  display: flex;
+  justify-content: space-around;
+  background: #d1defa;
+  border-radius: 0.3em;
+}
+.datos__box {
+  width: 30rem;
+  margin: 2em auto;
+}
+.direccion__datos h2 {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.7em;
+  margin: 0;
+}
+.direccion__datos h3 {
+  color: black;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.3em;
+  margin: 0;
+  padding: 0.1em 0.3em;
+}
+
+/* ----------------------------------FOOTER------------------------------ */
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  background: #d1defa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer h6,
+.footer a {
+  padding: 0.5em;
+  font-size: 1.1em;
+  font-weight: 400;
+}
+.footer a {
+  color: brown;
+  text-decoration: none;
+}
+
+/* -----------------MEDIA-QUERIES------------------- */
+
+@media screen and (min-width: 389px) and (max-width: 540px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    min-height: 5rem;
+  }
+  .logo {
+    display: flex;
+    margin: 0 auto;
+  }
+  .span__uno {
+    font-size: 2.5em;
+    margin-top: 0.9em;
+    margin-left: 0.2em;
+  }
+  h1 {
+    font-size: 0.9em;
+    margin-top: 2.9em;
+  }
+  .header nav {
+    display: block;
+    margin: 0;
+  }
+
+  .menu {
+    margin: 0 auto;
+  }
+  .menu li {
+    font-size: 0.8em;
+    font-weight: 500;
+  }
+
+  .search {
+    display: none;
+  }
+
+  /* --------inicio------- */
+
+  .inicio__sesion-uno {
+    width: 100%;
+    margin: 1rem auto;
+     background: linear-gradient(
+    180deg,
+    rgba(209, 222, 250, 1) 20%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  }
+  .inicio__div-uno {
+    margin: 2rem auto;
+  }
+  .inicio__h2 {
+    font-size: 1.3em;
+    color: brown;
+  }
+  .inicio__h3 {
+    font-size: 1em;
+    color: brown;
+  }
+  .inicio__div-dos {
+    animation: none;
+  }
+
+  .inicio__sesion-dos {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .inicio__div-tres {
+    display: none;
+  }
+  .inicio__div-cuatro {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .inicio__div-cuatro img {
+    width: 100%;
+  }
+  .inicio__h2b {
+    font-size: 1.5em;
+  }
+
+  /* -----------------------LISTA PREVIA/Inicio------------------- */
+  .inicio__div-cinco {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .previa {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+  }
+  .lista__previa {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .previa__box {
+    width: 95%;
+  }
+  .previa__box img {
+    width: 95%;
+  }
+  .lista__previa a {
+    font-size: 1em;
+  }
+  /* ----------------------------MATRICULA/RESERVAS-------------------------------- */
+
+  .matricula__contenedor {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .matricula__h2 {
+    font-size: 1.1em;
+  }
+  .form__matricula {
+    width: 90%;
+    border-radius: 0.2em;
+  }
+  .form__matricula label {
+    font-size: 0.9em;
+  }
+  .form__matricula .input__crear {
+    width: 15rem;
+    padding: 0.4em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.1em solid black;
+    border-right: 0.2em solid black;
+    border-radius: 0.2em;
+  }
+  .form__matricula .input__submit {
+    width: 5rem;
+    padding: 0.5em;
+    margin: 0.8em auto;
+    font-size: 0.8em;
+  }
+  .inicio__div-seis {
+    width: 90%;
+    margin: 1rem auto;
+    animation: none;
+  }
+  .inicio__div-seis h3 {
+    font-size: 0.8em;
+    font-weight: 400;
+  }
+  .inicio__div-siete {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .inicio__p span {
+    font-size: 1.2em;
+  }
+  .inicio__div-ocho {
+    animation: none;
+    flex-wrap: wrap;
+  }
+  .inicio__div-ocho img {
+    width: 65%;
+    padding: 0.2em;
+  }
+  .instagram__h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+  }
+  .instagram__h2 img {
+    width: 8rem;
+  }
+  /* ------------------------------DIRECCION----------------------------------- */
+  .direccion {
+    width: 100%;
+  }
+  .direccion__datos {
+    width: 100%;
+    margin: 1rem auto 0rem;
+    display: flex;
+    flex-direction: column;
+    background: #d1defa;
+    border-radius: 0.3em;
+  }
+  .datos__box {
+    width: 20rem;
+    margin: 1em auto;
+  }
+  .direccion__datos h2 {
+    text-align: center;
+    font-size: 1em;
+    color: black;
+  }
+  .direccion__datos h3 {
+    font-size: 0.8em;
+    text-align: center;
+  }
+/* ------------------FOOTER-------------------- */
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer h6,
+  .footer a {
+    padding: 0;
+    margin: 0.3em 0em;
+    font-size: 0.8em;
+    /* font-weight: 500; */
+  }
+}
+
+@media screen and (min-width: 541px) and (max-width: 768px) {
+  /* --------HEADER------- */
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 8rem;
+  }
+  .logo {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .span__uno {
+    font-size: 3.5em;
+    margin-top: 0.5em;
+  }
+  h1 {
+    font-size: 1.2em;
+    margin-top: 2.1em;
+  }
+  /* --------INICIO------- */
+  .inicio__sesion-uno {
+    width: 100%;
+    margin: 1rem auto;
+     background: linear-gradient(
+    180deg,
+    rgba(209, 222, 250, 1) 20%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  }
+  .inicio__h2{
+    font-size: 2em;
+    color: brown;
+  }
+  .inicio__h3 {
+    font-size: 1.6em;
+    color: brown;
+  }
+  .inicio__div-uno {
+    background: none;
+  }
+  .inicio__h4 {
+    font-size: 1.7em;
+  }
+  .esencia,
+  .historia,
+  .cultura {
+    font-size: 1em;
+  }
+  .inicio__sesion-dos {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .inicio__sesion-dos .inicio__div-tres .inicio__p:first-child {
+    display: none;
+  }
+  .inicio__div-tres {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .inicio__div-cuatro {
+    width: 80%;
+    margin: 0 auto;
+    order: 1;
+  }
+  .sesion__tres-h2 {
+    font-size: 1.6em;
+  }
+  /* ----------------------------MATRICULA/RESERVAS-------------------------------- */
+  .matricula__contenedor {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .inicio__div-seis h3 {
+    font-size: 1.5em;
+    padding-top: 0.5em;
+  }
+  .inicio__div-seis {
+    width: 90%;
+    animation: none;
+  }
+  .inicio__div-seis h3 {
+    font-size: 1em;
+    font-weight: 500;
+  }
+  .inicio__div-siete {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .inicio__sesion-cuatro .inicio__div-siete .inicio__p:last-child {
+    display: none;
+  }
+  .inicio__div-ocho {
+    animation: none;
+    flex-wrap: wrap;
+  }
+  .inicio__div-ocho img {
+    width: 80%;
+    padding: 0.2em;
+  }
+  /* ------------------------------DIRECCION----------------------------------- */
+  .direccion {
+    width: 100%;
+  }
+  .direccion__datos {
+    width: 100%;
+    margin: 1rem auto 0rem;
+    display: flex;
+    flex-direction: column;
+    background: #d1defa;
+    border-radius: 0.3em;
+  }
+  .datos__box {
+    width: 20rem;
+    margin: 0.5em auto;
+  }
+  .direccion__datos h2 {
+    text-align: center;
+    font-size: 1em;
+    color: black;
+  }
+  .direccion__datos h3 {
+    font-size: 0.9em;
+    text-align: center;
+  }
+  /* ----------------------------------FOOTER------------------------------ */
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer h6,
+  .footer a {
+    padding: 0em;
+    margin: 0.5em 0em 0em;
+    font-size: 0.9em;
+    /* font-weight: 500; */
+  }
+  .footer a {
+    margin: 0.1em;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 960px) {
+  .header {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .logo {
+    display: flex;
+    margin-left: 0.3em;
+  }
+  .span__uno {
+    display: block;
+    font-size: 3.3em;
+  }
+  h1 {
+    font-size: 1.3em;
+  }
+  /* ----------------------------NAV------------------ */
+
+  .menu li {
+    font-size: 0.9em;
+    margin: 0;
+  }
+  .menu a {
+    padding: 0.5em;
+  }
+  .submenu li a {
+    padding: 0.6em 1em;
+  }
+
+  .search div {
+    margin-right: 1em;
+  }
+  .inicio__h3 {
+    font-size: 1.9em;
+  }
+  /* ----------sesion-dos--------------- */
+  .inicio__div-tres {
+    width: 50%;
+    margin: 1rem auto;
+  }
+  .inicio__p {
+    font-size: 1.1em;
+    font-weight: 300;
+    padding: 0.3em 0.3em;
+    margin: 0;
+  }
+  .inicio__p span {
+    font-size: 1.3em;
+    color: brown;
+  }
+  .inicio__div-cuatro {
+    width: 36%;
+    margin: 1rem auto;
+  }
+  .inicio__div-cuatro img {
+    width: 100%;
+  }
+  /* ----------------------------MATRICULA/RESERVAS-------------------------------- */
+
+  .form__matricula label {
+    padding: 0.1em 0.5em;
+  }
+  .form__matricula .input__crear {
+    width: 22rem;
+  }
+  /* ------------sesion-cuatro------------------ */
+  .inicio__div-siete {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .inicio__div-ocho {
+    animation: none;
+    margin: 1em auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .inicio__div-ocho img {
+    width: 20rem;
+    padding: 0.6em 0.3em;
+  }
+  /* --------------DIRECCION----------------- */
+  .datos__box {
+    width: 45rem;
+  }
+  .direccion__datos h2 {
+    font-size: 1.5em;
+  }
+  .direccion__datos h3 {
+    font-size: 1.3em;
+    font-weight: 400;
+  }
+  /* ----------------------------------FOOTER------------------------------ */
+  .footer h6,
+  .footer a {
+    padding: 0.7em;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+}

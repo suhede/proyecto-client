@@ -1,0 +1,79 @@
+/* ----------------------------REGISTRO-------------------------------- */
+
+.lista__h2 {
+  text-align: center;
+  margin: 1em auto;
+  font-size: 3rem;
+  font-weight: 300;
+  color: brown;
+}
+.registro {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.registro__div {
+  width: 30rem;
+  margin: 2rem auto;
+}
+
+.lista__registro {
+  width: 25rem;
+  margin: 1.5em;
+}
+.lista__registro h3 {
+  font-weight: 400;
+  font-size: 1.2em;
+  padding: 0.2em 0.5em;
+  margin: 0;
+}
+.lista__registro h4 {
+  font-weight: 300;
+  font-size: 1.1em;
+  padding: 0em 0.5em;
+  margin: 0;
+}
+.lista__registro h4 span {
+  border-bottom: 0.2em solid brown;
+}
+
+@media screen and (min-width: 389px) and (max-width: 540px) {
+ 
+  .lista__h2 {
+    font-size: 1.2em;
+  }
+  .registro {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .registro__div {
+    width: 20rem;
+    margin: 0.5em auto;
+  }
+  .lista__registro {
+    width: 12rem;
+    margin: 1em;
+  }
+  .lista__registro h3 {
+    font-size: 0.9em;
+  }
+  .lista__registro h4 {
+    font-size: 0.9em;
+  }
+}
+@media screen and (min-width: 541px) and (max-width: 768px) {
+  .lista__h2 {
+    font-size: 1.2em;
+  }
+
+  .registro__div {
+    width: 25rem;
+    margin: 0.5rem auto;
+  }
+  .lista__registro {
+    width: 18rem;
+    margin: 0.5rem auto 1rem;
+  }
+}

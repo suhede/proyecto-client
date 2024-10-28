@@ -1,0 +1,145 @@
+/* ------------------FORMULARIOS-CREAR-CURSOS-/ACTUALIZAR------------------------------- */
+.crear__h2 {
+  text-align: center;
+  margin: 1em auto;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: brown;
+}
+.crear__contenedor {
+  width: 70%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.1em solid #d1defa;;
+  border-radius: 0.3em;
+  box-shadow: 0em 0em 0.5em #d1defa;
+  box-sizing: border-box;
+}
+.form {
+  width: 60%;
+  margin: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+}
+.form label {
+  margin: 0.5em 4em 0.2em;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: brown;
+}
+.input__crear,
+.input__precio {
+  width: 25rem;
+  padding: 0.7em;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.1em solid black;
+  border-right: 0.1em solid black;
+  border-radius: 0.3em;
+  resize: none;
+}
+.input__precio {
+  width: 8rem;
+  margin-bottom: 0.5em;
+}
+
+/* ----------------------------ELIMINAR------------------------------ */
+
+.eliminar {
+  width: 20rem;
+  margin: 6rem auto;
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+  box-shadow: 0em 0em 0.5em #bbb;
+  background-color: #eee;
+}
+.eliminar__botton {
+  width: 4rem;
+  margin: 1rem;
+  padding: 1em;
+  border: none;
+  border-radius: 0.2em;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 300ms;
+}
+.uno {
+  background-color: rgb(25, 179, 184);
+}
+.dos {
+  background-color: rgb(180, 180, 180);
+}
+.uno:hover,
+.dos:hover {
+  background-color: gold;
+}
+
+/* -----------------MEDIA-QUERIES------------------- */
+
+@media screen and (min-width: 389px) and (max-width: 540px) {
+  .crear__contenedor {
+    width: 90%;
+  }
+  .crear__h2 {
+    font-size: 1.2em;
+  }
+  .form {
+    width: 90%;
+  }
+  .form label {
+    font-size: 0.7em;
+  }
+  .input__crear{
+    width: 14rem;
+    padding: 0.3em;
+  }
+  .input__precio{
+    width: 8rem;
+    padding: 0.5em;
+  }
+.form .input__submit{
+  font-size: 0.7em;
+  width: 6rem;
+}
+
+  /* ------------ELIMINAR---------- */
+  .eliminar {
+    width: 12rem;
+
+  }
+  .eliminar__botton{
+    width: 2.5rem;
+    margin: 0.5rem;
+    padding: 0.5em;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (min-width: 541px) and (max-width: 768px) {
+
+  .crear__contenedor {
+    width: 90%;
+  }
+  .form {
+    width: 90%;
+  }
+  .form label {
+    font-size: 1.2em;
+  }
+  .input__crear{
+    width: 22rem;
+    padding: 0.6em;
+  }
+  .input__precio{
+    width: 8rem;
+    padding: 0.6em;
+  }
+
+
+}
