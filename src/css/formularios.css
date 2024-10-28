@@ -1,10 +1,21 @@
+
+/* Declaracion variables: colores y fonts utilizadas */
+:root {
+  --font-general: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-complemento: Georgia, "Times New Roman", Times, serif;
+  --color-a: #d1defa;
+  --color-b:brown;
+  --color-c: goldenrod;
+  --color-d:#dbeeea;
+  --color-e: #19b3b8;
+}
 /* ------------------FORMULARIOS-CREAR-CURSOS-/ACTUALIZAR------------------------------- */
 .crear__h2 {
   text-align: center;
   margin: 1em auto;
   font-size: 2.5rem;
   font-weight: 300;
-  color: brown;
+  color: var(--color-b);
 }
 .crear__contenedor {
   width: 70%;
@@ -12,9 +23,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 0.1em solid #d1defa;;
+  border: 0.1em solid var(--color-a);
   border-radius: 0.3em;
-  box-shadow: 0em 0em 0.5em #d1defa;
+  box-shadow: 0em 0em 0.5em var(--color-a);
   box-sizing: border-box;
 }
 .form {
@@ -29,7 +40,7 @@
   margin: 0.5em 4em 0.2em;
   font-size: 1.2em;
   font-weight: 500;
-  color: brown;
+  color: var(--color-b);
 }
 .input__crear,
 .input__precio {
@@ -37,8 +48,8 @@
   padding: 0.7em;
   background-color: transparent;
   border: none;
-  border-bottom: 0.1em solid black;
-  border-right: 0.1em solid black;
+  border-bottom: 0.1em solid;
+  border-right: 0.2em solid grey;
   border-radius: 0.3em;
   resize: none;
 }
@@ -70,7 +81,8 @@
   transition: all 300ms;
 }
 .uno {
-  background-color: rgb(25, 179, 184);
+  background-color: var(--color-e);
+
 }
 .dos {
   background-color: rgb(180, 180, 180);

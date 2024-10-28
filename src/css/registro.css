@@ -1,3 +1,14 @@
+
+/* Declaracion variables: colores y fonts utilizadas */
+:root {
+  --font-general: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-complemento: Georgia, "Times New Roman", Times, serif;
+  --color-a: #d1defa;
+  --color-b:brown;
+  --color-c: goldenrod;
+  --color-d:#dbeeea;
+  --color-e: #19b3b8;
+}
 /* ----------------------------REGISTRO-------------------------------- */
 
 .lista__h2 {
@@ -5,7 +16,7 @@
   margin: 1em auto;
   font-size: 3rem;
   font-weight: 300;
-  color: brown;
+  color: var(--color-b);
 }
 .registro {
   width: 100%;
@@ -24,7 +35,6 @@
   margin: 1.5em;
 }
 .lista__registro h3 {
-  font-weight: 400;
   font-size: 1.2em;
   padding: 0.2em 0.5em;
   margin: 0;
@@ -36,7 +46,7 @@
   margin: 0;
 }
 .lista__registro h4 span {
-  border-bottom: 0.2em solid brown;
+  border-bottom: 0.2em solid var(--color-b);
 }
 
 @media screen and (min-width: 389px) and (max-width: 540px) {

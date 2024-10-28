@@ -1,3 +1,15 @@
+
+/* Declaracion variables: colores y fonts utilizadas */
+:root {
+  --font-general: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-complemento: Georgia, "Times New Roman", Times, serif;
+  --color-a: #d1defa;
+  --color-b:brown;
+  --color-c: goldenrod;
+  --color-d:#dbeeea;
+  --color-e: #19b3b8;
+}
+
 /* ------------------------botones inicio/cerrar sesion-------- */
 .sesion {
     width: 15rem;
@@ -7,7 +19,7 @@
     margin-right: 1em;
   }
   .sesion p {
-    color: brown;
+    color: var(--color-b);
     list-style-type: none;
     font-weight: bold;
     padding: 0.4em;
@@ -42,7 +54,7 @@
   .login__label {
     font-size: 1.5em;
     padding: 0.5em;
-    color: brown;
+    color: var(--color-b);
   }
   .login__input {
     border: none;
@@ -59,7 +71,7 @@
     font-weight: 700;
     font-size: 16px;
     color: white;
-    background-color: goldenrod;
+    background-color: var(--color-c);
     border-radius: 0.5em;
     transition-duration: 0.3s;
   }
@@ -95,7 +107,7 @@
   }
   .footer a {
     margin-left: 0em;
-    color: brown;
+    color: var(--color-b);
     font-size: 0.8em;
     font-weight: 400;
     text-decoration: none;

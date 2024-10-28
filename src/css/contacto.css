@@ -1,3 +1,14 @@
+
+/* Declaracion variables: colores y fonts utilizadas */
+:root {
+  --font-general: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-complemento: Georgia, "Times New Roman", Times, serif;
+  --color-a: #d1defa;
+  --color-b:brown;
+  --color-c: goldenrod;
+  --color-d:#dbeeea;
+  --color-e: #19b3b8;
+}
 /* -------------------------------------CONTACTOS------------------------------------------ */
 
 .contacto__img {
@@ -30,7 +41,7 @@
 .form__h3 {
   font-weight: 500;
   font-size: 1.6em;
-  color: brown;
+  color: var(--color-b);
 }
 .datos h2 a {
   display: flex;
@@ -65,8 +76,8 @@
   padding: 0.7em;
   background-color: transparent;
   border: none;
-  border-bottom: 0.1em solid brown;
-  border-right: 0.2em solid brown;
+  border-bottom: 0.1em solid var(--color-b);
+  border-right: 0.2em solid var(--color-b);
   border-radius: 0.3em;
   resize: none;
 }
@@ -74,7 +85,7 @@
   width: 7rem;
   padding: 0.7em;
   margin: 0.8em auto;
-  background: goldenrod;
+  background: var(--color-c);
   border: none;
   border-radius: 0.2em;
   font-weight: bold;
