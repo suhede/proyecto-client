@@ -30,8 +30,7 @@ function Inicio() {
             </p>{" "}
             <p className="inicio__p ">
               {" "}
-              Te damos la oportunidad de dar rienda suelta a tu imaginación y
-              desarrolles tus habilidades. Porque la creatividad no es más que
+              Te damos la oportunidad de dar rienda suelta a tu imaginación, porque la creatividad no es más que
               la inteligencia divirtiendose.
             </p>
           </div>
