@@ -42,7 +42,7 @@ function ListaArticulos() {
           return (
             <div key={lista._id} className="div__lista">
               <div className="div__img">
-                <img src={lista.Imagen} loading="lazy" alt="imagen del curso" />
+                <img src={lista.Imagen} alt="imagen del curso" />
               </div>
 
               <div className="div__curso">
