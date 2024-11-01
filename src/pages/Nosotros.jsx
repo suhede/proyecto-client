@@ -1,8 +1,5 @@
 import React, {Suspense} from "react";
-import taller_escultura from "../assets/imagenes/taller_escultura.webp";
-import taller_pintura from "../assets/imagenes/taller_pintura.webp";
-import sala_exposicion from "../assets/imagenes/sala_exposicion.webp";
-import directora from "../assets/imagenes/directora.webp";
+
 const Direccion = React.lazy(() => import("./Direccion"));
 
 function Nosotros() {
@@ -52,13 +49,13 @@ function Nosotros() {
 
           <div className="nosotros__img">
             <img
-              src={taller_escultura}
+              src="https://live.staticflickr.com/65535/54108674629_5d16702b40_n.jpg"
               loading="lazy"
               alt="taller de escultura"
             />
-            <img src={taller_pintura} loading="lazy" alt="taller de pintura" />
+            <img src="https://live.staticflickr.com/65535/54108675044_eb483145e0_w.jpg" loading="lazy" alt="taller de pintura" />
             <img
-              src={sala_exposicion}
+              src="https://live.staticflickr.com/65535/54108675924_e938f7a929_w.jpg"
               loading="lazy"
               alt="sala de exposicion"
             />
@@ -70,7 +67,7 @@ function Nosotros() {
         <div className="nosotros">
           <div className="nosotros__img">
             <img
-              src={directora}
+              src="https://live.staticflickr.com/65535/54108590953_787492fe01_n.jpg"
               loading="lazy"
               alt="la directora de la escuela"
             />

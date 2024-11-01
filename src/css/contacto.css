@@ -15,9 +15,10 @@
   width: 100%;
   min-height: 35rem;
   margin: 0 auto;
-  background-image: url("./src/assets/imagenes/taller_dibujo.webp");
-  background-position: center;
-  opacity: 0.3;
+  background-image: url("https://live.staticflickr.com/65535/54107663684_700de269b0.jpg");
+  background-position:center;
+  background-size:cover;
+  opacity:0.5 ;
   position: relative;
 }
 .contacto__datos {
@@ -39,9 +40,8 @@
 }
 .datos h2,
 .form__h3 {
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1.6em;
-  color: var(--color-b);
 }
 .datos h2 a {
   display: flex;

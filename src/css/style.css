@@ -159,7 +159,7 @@ h1 {
   margin: 2rem auto;
 }
 .inicio__sesion-uno {
-  background-image: url("./src/assets/imagenes/inicio_dos.webp");
+  background-image: url("https://live.staticflickr.com/65535/54107280276_3463a77a7a.jpg");
   background-position:center;
   background-size:cover;
   display: flex;
@@ -176,21 +176,19 @@ h1 {
   margin: 4rem auto 2rem;
 }
 .inicio__h2 {
-  font-weight: 500;
+  font-weight: bold;
   font-size: 2.1em;
   font-style: oblique;
   text-align: center;
-  color: white;
-  text-shadow:0em 0em 0.3em grey; 
+ color: white;
 }
 .inicio__h3 {
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1.8em;
   font-style: oblique;
   text-align: center;
   padding: 1em 0.5em;
   color: white;
-  text-shadow:0em 0em 0.3em grey; 
 }
 .inicio__div-dos,
 .inicio__div-ocho {
@@ -212,7 +210,6 @@ h1 {
   text-align: center;
   transition: all 300ms;
   color: white;
- text-shadow:0em 0em 0.3em grey;
 }
 .esencia {
   font-size: 1.8em;

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 
+
 function Detalles() {
   {
     /* ----ESTA PAGINA ES UNA CONTINUACIÓN DE LA FUNCIONALIDAD LECTURA DEL CRUD, 

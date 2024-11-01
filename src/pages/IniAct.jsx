@@ -1,10 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import logo from "../assets/imagenes/logo_instagran.png";
-import visitaUno from "../assets/imagenes/visita_uno.webp";
-import visitaDos from "../assets/imagenes/visita_dos.webp";
-import visitaTres from "../assets/imagenes/visita_tres.webp";
-import visitaCuatro from "../assets/imagenes/visita_cuatro.webp";
 
 function IniAct () {
   return (
@@ -28,22 +24,22 @@ function IniAct () {
 
           <div className="inicio__div-ocho">
             <img
-              src={visitaUno}
+              src="https://live.staticflickr.com/65535/54108237426_4c3e616b23_w.jpg"
               loading="lazy"
               alt="una chica con sombrero miranda un cuadro "
             />
             <img
-              src={visitaDos}
+              src="https://live.staticflickr.com/65535/54108688485_9dd4ba1804_z.jpg"
               loading="lazy"
               alt="foto del museo de arte de bilbao"
             />
             <img
-              src={visitaTres}
+              src="https://live.staticflickr.com/65535/54108688115_be5fc0f848.jpg"
               loading="lazy"
               alt="una chica de espalda en pasillo de galeria"
             />
             <img
-              src={visitaCuatro}
+              src="https://live.staticflickr.com/65535/54107366927_bd047c15a7_n.jpg"
               loading="lazy"
               alt="una sala de exposicion con un cuadro muy grande "
             />

@@ -4,7 +4,6 @@ const IniAct = React.lazy(() => import("./IniAct"));
 const Direccion = React.lazy(() => import("./Direccion"));
 const ListaPrevia = React.lazy(() => import("./ListaPrevia"));
 const Matricula = React.lazy(() => import("./Matricula"));
-import abstracta from "../assets/imagenes/pintura-abstracta-de-una-cuidad.webp";
 
 function Inicio() {
   return (
@@ -37,9 +36,9 @@ function Inicio() {
 
           <div className="inicio__div-cuatro">
             <img
-              src={abstracta}
+              src="https://live.staticflickr.com/65535/54106428882_9a3d24e3d5_w.jpg"
               loading="lazy"
-              alt="imagen unida a la definicion de arte"
+              alt="imagen utensilios para pintar"
             />
           </div>
         </section>
